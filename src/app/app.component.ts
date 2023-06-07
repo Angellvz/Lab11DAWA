@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-tasks: string[] = [];
+  tasks: string[] = [];
+  taskStatus: boolean[] = [];
 
-addTask(task: string) {
-this.tasks.push(task);
-}
+  addTask(task: string) {
+    this.tasks.push(task);
+    this.taskStatus.push(false); // Estado inicial: No completada
+  }
 }

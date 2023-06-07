@@ -10,5 +10,10 @@ import { Component, Input } from '@angular/core';
 
 export class TaskListComponent {
   @Input() tasks: string[] = [];
+  taskStatus: boolean[] = [];
+
+  updateTaskStatus(index: number) {
+    this.taskStatus[index] = !this.taskStatus[index];
+  }
   
 }

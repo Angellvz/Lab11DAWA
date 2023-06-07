@@ -1,1 +1,9 @@
-<p>task-filter works!</p>
+<div>
+    <label>Filtro de tareas:</label>
+    <select (change)="changeFilter($event)">
+      <option value="all">Todas</option>
+      <option value="completed">Completadas</option>
+      <option value="uncompleted">No completadas</option>
+    </select>
+  </div>
+  

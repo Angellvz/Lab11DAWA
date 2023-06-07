@@ -14,5 +14,6 @@ export class AddTaskComponent {
   addTask() {
     this.taskAdded.emit(this.taskName);
     this.taskName = '';
+    
   }
 }
